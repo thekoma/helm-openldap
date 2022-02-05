@@ -208,10 +208,10 @@ ltb-passwd:
     ## Ingress Host
     hosts:
     - "ssl-ldap2.example"
+  # existingSecret: openldaptest
   ldap:
     server: ldap://openldap-openldap-stack-ha
     searchBase: dc=example,dc=org
-    # existingSecret: openldaptest
     bindDN: cn=admin,dc=example,dc=org
     bindPWKey: LDAP_ADMIN_PASSWORD
 
